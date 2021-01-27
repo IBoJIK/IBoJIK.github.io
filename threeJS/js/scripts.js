@@ -67,8 +67,8 @@ function init() {
    scene.add( controller );
 
    reticle = new THREE.Mesh(
-      new THREE.RingBufferGeometry( 0.2, 0.3, 8 ).rotateX( - Math.PI / 2 ),
-      new THREE.MeshBasicMaterial()
+      new THREE.RingBufferGeometry( 0.01, 0.03, 12 ).rotateX( - Math.PI / 2 ),
+      new THREE.MeshBasicMaterial({opacity: 0.4})
    );
    reticle.matrixAutoUpdate = false;
    reticle.visible = false;
